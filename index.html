@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Kelvin | Desenvolvedor Full-Stack</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i class="fas fa-code"></i> felipekelvin.dev
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-tag">Bem-vindo ao meu portfólio</span>
+        <h1>Felipe Kelvin</h1>
+        <p class="hero-subtitle">Desenvolvedor Web Full-Stack | UI/UX | JavaScript</p>
+        <p class="hero-description">
+          Criando experiências digitais modernas, responsivas e de alta performance. 
+          Especializado em desenvolvimento front-end com foco em código limpo e boas práticas.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver Meus Projetos</a>
+          <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:felipekelvin087@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/559991663566" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <span></span><span></span><span></span>
+          </div>
+          <code>
+            <span class="code-const">const</span> <span class="code-var">developer</span> = {<br>
+            &nbsp;&nbsp;name: <span class="code-string">"Felipe Kelvin"</span>,<br>
+            &nbsp;&nbsp;role: <span class="code-string">"Full-Stack Developer(Web)"</span>,<br>
+            &nbsp;&nbsp;skills: [<span class="code-string">"React"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"CSS"</span>],<br>
+            &nbsp;&nbsp;passionate: <span class="code-bool">true</span><br>
+            };
+          </code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Sou um desenvolvedor apaixonado por tecnologia com foco em criar soluções web modernas e eficientes. 
+            Com experiência em desenvolvimento front-end e conhecimentos em back-end, busco constantemente aprender 
+            e aprimorar minhas habilidades.
+          </p>
+          <p>
+            Atualmente trabalho como freelancer, criando sites responsivos e aplicações web personalizadas para 
+            diversos clientes. Acredito na importância do código limpo, boas práticas e experiência do usuário.
+          </p>
+          <p>
+            Sou graduando em <strong>Análise e Desenvolvimento de Sistemas e Engenharia de Software</strong> e estou constantemente em busca 
+            de novos desafios que me permitam crescer profissionalmente.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projetos Completos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Clientes Satisfeitos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Dedicação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-palette"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">APIs REST</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Firebase(Google)</span>
+            <span class="skill-tag">npm/yarn</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Comunicação</span>
+            <span class="skill-tag">Trabalho em Equipe</span>
+            <span class="skill-tag">Resolução de Problemas</span>
+            <span class="skill-tag">Criatividade</span>
+            <span class="skill-tag">Atenção aos Detalhes</span>
+            <span class="skill-tag">Adaptabilidade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projetos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos Destaque</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-globe"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Plataforma de Resumos</h3>
+            <p>Uma plataforma web para criação, compartilhamento e organização de resumos acadêmicos com sistema de colaboração em tempo real.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> Código</a>
+              <a href="https://plataformaderesumos.netlify.app/" class="link-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Site mini lanchonete</h3>
+            <p>Site para uma mini lanchonete, com apresentação dos produtos e informações de contato.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> Código</a>
+              <a href="https://querocoxinha.netlify.app/" class="link-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-tasks"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sistema Financeiro</h3>
+            <p>Um sistema de gestão financeira para pequenas empresas, com funcionalidades de controle de despesas, receitas e relatórios.</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Firebase</span>
+              <span>API de pagamentos</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> Código</a>
+              <a href="https://sistemafinanceiro33.netlify.app/" class="link-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-images"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Landing Page Agência</h3>
+            <p>Landing page responsiva, com design moderno, animações suaves e alto índice de conversão.</p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn"><i class="fab fa-github"></i> Código</a>
+              <a href="https://modelolandingpage10.netlify.app/" class="link-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+      <p class="contact-subtitle">Tenho interesse em oportunidades freelancer e trabalhos em tempo integral.</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:felipekelvin087@gmail.com">felipekelvin087@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/559991663566" target="_blank">(+55) 99 9166-3566</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://linkedin.com/in/felipe-kelvin" target="_blank">linkedin.com/in/felipekelvin</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/felipekelvin" target="_blank">github.com/felipekelvin</a></p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Seu Nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Seu Email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Felipe Kelvin</h4>
+          <p>Desenvolvedor Web Full-Stack apaixonado por criar experiências digitais incríveis.</p>
+        </div>
+        <div>
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Redes Sociais</h4>
+          <div class="footer-social">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Felipe Kelvin. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
