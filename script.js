@@ -107,6 +107,17 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
+// FUNÇÃO DE ESCAPE PARA PREVENIR XSS
+// ============================================
+
+function escapeHTML(value) {
+  const textNode = document.createTextNode(value);
+  const div = document.createElement('div');
+  div.appendChild(textNode);
+  return div.innerHTML;
+}
+
+// ============================================
 // FORMULÁRIO DE CONTATO
 // ============================================
 
@@ -117,12 +128,15 @@ if (contactForm) {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
+    const data = Object.fromEntries(formData.entries()).reduce((acc, [key, value]) => {
+      acc[key] = escapeHTML(value);
+      return acc;
+    }, {});
 
     // Aqui você pode adicionar a lógica de envio do formulário
     console.log('Dados do formulário:', data);
 
-    // Feedback visual
+    // Feedback visual seguro
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
 

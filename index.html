@@ -311,13 +311,13 @@
 
         <form class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Seu Nome" required>
+            <input type="text" name="name" placeholder="Seu Nome" required autocomplete="name">
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Seu Email" required>
+            <input type="email" name="email" placeholder="Seu Email" required autocomplete="email">
           </div>
           <div class="form-group">
-            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
         </form>
