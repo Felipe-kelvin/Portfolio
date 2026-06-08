@@ -520,20 +520,20 @@ code {
   line-height: 1.8;
 }
 
-.code-const {
-  color: #ec4899;
+.code-card .code-const {
+  color: #ec4899 !important;
 }
 
-.code-var {
-  color: #60a5fa;
+.code-card .code-var {
+  color: #60a5fa !important;
 }
 
-.code-string {
-  color: #34d399;
+.code-card .code-string {
+  color: #34d399 !important;
 }
 
-.code-bool {
-  color: #fbbf24;
+.code-card .code-bool {
+  color: #fbbf24 !important;
 }
 
 @media (max-width: 768px) {

@@ -198,51 +198,59 @@ document.querySelectorAll('.project-card').forEach((card) => {
 
 const codeElement = document.querySelector('.code-card code');
 if (codeElement) {
-  const originalHTML = codeElement.innerHTML;
-  const parts = originalHTML.match(/<[^>]+>|&[^;]+;|[^<&]+/g) || [];
+  const clone = codeElement.cloneNode(true);
+  const textNodes = [];
+
+  function collectTextNodes(node) {
+    node.childNodes.forEach((child) => {
+      if (child.nodeType === Node.TEXT_NODE) {
+        textNodes.push({ node: child, text: child.textContent });
+        child.textContent = '';
+      } else {
+        collectTextNodes(child);
+      }
+    });
+  }
+
+  collectTextNodes(clone);
   codeElement.innerHTML = '';
-  let partIndex = 0;
+  codeElement.appendChild(clone);
+
+  let nodeIndex = 0;
   let charIndex = 0;
+  let typingStarted = false;
 
   function typeCode() {
-    if (partIndex >= parts.length) {
+    if (nodeIndex >= textNodes.length) {
       return;
     }
 
-    const part = parts[partIndex];
-
-    if (part.startsWith('<') || part.startsWith('&')) {
-      codeElement.innerHTML += part;
-      partIndex++;
-      charIndex = 0;
-      setTimeout(typeCode, 20);
-      return;
-    }
-
-    codeElement.innerHTML += part[charIndex];
+    const current = textNodes[nodeIndex];
+    current.node.textContent += current.text[charIndex];
     charIndex++;
 
-    if (charIndex >= part.length) {
-      partIndex++;
+    if (charIndex >= current.text.length) {
+      nodeIndex++;
       charIndex = 0;
     }
 
     setTimeout(typeCode, 20);
   }
 
-  // Iniciar animação quando chegar ao topo da página
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset < 100 && partIndex === 0) {
+  function startTyping() {
+    if (!typingStarted) {
+      typingStarted = true;
       setTimeout(typeCode, 500);
+    }
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset < 100) {
+      startTyping();
     }
   });
 
-  // Ou iniciar após um tempo
-  setTimeout(() => {
-    if (partIndex === 0) {
-      typeCode();
-    }
-  }, 1000);
+  setTimeout(startTyping, 1000);
 }
 
 // ============================================
