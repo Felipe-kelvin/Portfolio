@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Felipe Kelvin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-code"></i> felipekelvin.dev
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="index.html#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="services.html" class="nav-link">Serviços</a></li>
+        <li><a href="curriculo.html" class="nav-link">Currículo</a></li>
+        <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="service-section">
+    <div class="container">
+      <h2 class="section-title">Serviços que ofereço</h2>
+      <p style="text-align:center; color: var(--text-secondary); max-width: 760px; margin: 0 auto 3rem; font-size: 1rem;">Ofereço serviços profissionais focados em desenvolvimento web, experiência do usuário e soluções digitais completas. Cada serviço inclui atendimento personalizado e suporte direto pelo WhatsApp.</p>
+      <div class="service-grid">
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites e aplicações responsivas com HTML, CSS, JavaScript e frameworks modernos, garantindo performance e design atrativo.</p>
+          </div>
+          <a href="https://wa.me/559991663566?text=Olá%20Felipe%2C%20gostaria%20de%20contratar%20o%20serviço%20de%20Desenvolvimento%20Web" class="hire-btn" target="_blank" rel="noopener">Contratar pelo WhatsApp</a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Design UI/UX</h3>
+            <p>Planejamento e criação de interfaces modernas e intuitivas, com foco em usabilidade, identidade visual e melhor conversão para seu público.</p>
+          </div>
+          <a href="https://wa.me/559991663566?text=Olá%20Felipe%2C%20gostaria%20de%20contratar%20o%20serviço%20de%20Design%20UI%2FUX" class="hire-btn" target="_blank" rel="noopener">Contratar pelo WhatsApp</a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Integração e Back-end</h3>
+            <p>Desenvolvimento de APIs, integrações com bancos de dados e serviços em nuvem, garantindo que sua aplicação funcione com segurança e escalabilidade.</p>
+          </div>
+          <a href="https://wa.me/559991663566?text=Olá%20Felipe%2C%20gostaria%20de%20contratar%20o%20serviço%20de%20Integração%20e%20Back-end" class="hire-btn" target="_blank" rel="noopener">Contratar pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
